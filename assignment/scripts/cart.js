@@ -19,14 +19,13 @@ function listItems() {
     return true;
 }
 basket.push( 'cereal', 'eggs', 'milk', 'butter' );
-console.log( listItems() );
+console.log( 'Should list all items (expected true),', listItems() );
 
 function empty() {
     console.log( 'in empty' );
     basket.length = 0;
     return true;
 }
-console.log( empty() );
-console.log( 'Basket should now be empty,', basket );
+console.log( 'Basket should now be empty (expect true),', empty(), 'Basket is:', basket );
 basket.push( 'test_thing' );
 console.log( 'Basket should now only contain a test_thing', basket );
