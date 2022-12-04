@@ -65,3 +65,14 @@ console.log( addItem2( 'chicken' ) );
 // Is there a way to put multiple item into the basket at once and -
 // for the function to behave properly when doing so?
 
+function removeItem( item ) {
+    console.log( 'in removeItem' );
+    let indexOfItem = basket.indexOf( item )
+    console.log(indexOfItem);
+    let removedItem = basket.splice( indexOfItem, 1);
+    console.log(removedItem);
+}
+console.log( basket );
+removeItem( 'chicken' );
+
+// This kinda works. I'm guessing I need to use an if statement to return null if the item isnt found. But cant figure it out right now.
