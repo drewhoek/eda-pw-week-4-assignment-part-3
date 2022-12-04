@@ -39,19 +39,19 @@ function isFull() {
         return true;
     }
 }
-console.log( 'Expect function to return false now:', isFull() );
+console.log( 'Expect isFull to return false now:', isFull() );
 basket.push( 'bananas', 'bread', 'oranges', 'pop' ); // To test if function is working with 5 items.
 console.log( basket );
-console.log ( 'Expect function to return true now:', isFull() );
+console.log ( 'Expect isFull to return true now:', isFull() );
 
 function addItem2( item ) {
     console.log( 'in addItem2' );
     basket.push( item );
     if ( isFull() === false ) {
-        return 'You can still add more to the basket! You have: ' + basket.length + ' items.';
+        return 'You can still add more to the basket! You have: ' + basket.length + ' items. Item added is: ' + true;
     } else {
         basket.pop();
-        return 'The basket is full! You cannot add more items.'
+        return 'The basket is full! You cannot add more items.' + false;
     }
 }
 
